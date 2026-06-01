@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>&#8982; Active Club Australia</title>
+  <style>
+    @font-face {
+      font-family: IFCHardball;
+      src: url(./ifchardball.ttf);
+    }
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 13px;
+    }
+
+    #background-video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      min-width: 101%;
+      min-height: 101%;
+      filter: grayscale(100%);
+      z-index: -1;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      color: #f1f1f1;
+      width: 100%;
+      padding: 1vh;
+    }
+
+    #footer-credit {
+      float: left;
+    }
+
+    #footer-links {
+      float: right;
+    }
+
+    #menu {
+      font-family: IFCHardball;
+      font-size: 3vw;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-list {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      color: #111111;
+    }
+
+
+    #about {
+      display: none;
+    }
+
+    #factions {
+      display: none;
+    }
+
+    #rules {
+      display: none;
+    }
+
+    #events {
+      display: none;
+    }
+
+    #faq {
+      display: none;
+    }
+
+    #contact {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="menu">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">HOME</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">ABOUT</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">FACTIONS</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">RULES</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">EVENTS</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">FAQ</a>
+      </li>
+      <li class="menu-item">
+        <a href="https://www.activeclubaustralia.org/" class="menu-link">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+
+  <div id="about">
+    ...
+  </div>
+
+  <div id="factions">
+    ...
+  </div>
+
+  <div id="rules">
+    ...
+  </div>
+
+  <div id="events">
+    ...
+  </div>
+
+  <div id="faq">
+    ...
+  </div>
+
+  <div id="contact">
+    ...
+  </div>
+
+  <div id="disclaimer">
+    ...
+  </div>
+
+  <div id="privacy">
+    ...
+  </div>
+
+  <video autoplay muted loop id="background-video">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="footer">
+    <p id="footer-credit">&nbsp;<b>HX-01</b> by <a style="color: white;" target="_blank"
+        href="https://hexeosis.com/about/">hexeosis</a></p>
+    <p id="footer-links">&nbsp;<a style="color: white;" href="https://www.activeclubaustralia.org/">disclaimer</a> | <a style="color: white;"
+        href="https://www.activeclubaustralia.org/">privacy policy</a>&nbsp;</p>
+  </div>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
