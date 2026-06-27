@@ -29,10 +29,10 @@
       min-width: 101%;
       min-height: 101%;
       filter: grayscale(100%);
-      z-index: -1;
+      z-index: -2;
     }
 
-    .footer {
+    #footer {
       position: fixed;
       bottom: 0;
       color: #f1f1f1;
@@ -48,12 +48,16 @@
       float: right;
     }
 
+    .footer-link {
+      color: #f1f1f1;
+    }
+
     #menu {
       font-family: IFCHardball;
       font-size: 3vw;
-      color: white;
       padding: 20px;
       text-align: center;
+      z-index: 3;
     }
 
     .menu-list {
@@ -74,9 +78,9 @@
 
     ul li a {
       display: block;
-      color: white;
       text-align: center;
       padding: 14px 16px;
+      color: white;
       text-decoration: none;
     }
 
@@ -84,37 +88,55 @@
       color: #111111;
     }
 
+    #background-white {
+      display: none;
+      background-color: white;
+      position: fixed;
+      top: 0px;
+      min-width: 101%;
+      height: 101%;
+      opacity: 97%;
+      z-index: -1;
+    }
 
     #about {
       display: none;
+      padding: 150px;
     }
 
     #local {
       display: none;
+      padding: 150px;
     }
 
     #rules {
       display: none;
+      padding: 150px;
     }
 
     #projects {
       display: none;
+      padding: 150px;
     }
 
     #faq {
       display: none;
+      padding: 150px;
     }
 
     #contact {
       display: none;
+      padding: 150px;
     }
 
     #disclaimer {
       display: none;
+      padding: 150px;
     }
 
     #privacy {
       display: none;
+      padding: 150px;
     }
   </style>
 </head>
@@ -124,71 +146,333 @@
   <div id="menu">
     <ul class="menu-list">
       <li class="menu-item">
-        <a href="https://www.activeclubaustralia.org/" class="menu-link">ABOUT</a>
+        <a onclick="home()" href="#" class="menu-link" style="font-size: 2.14vw;">&#8982;</a>
       </li>
       <li class="menu-item">
-        <a href="https://www.activeclubaustralia.org/" class="menu-link">LOCAL</a>
+        <a onclick="about()" href="#" class="menu-link">ABOUT</a>
       </li>
       <li class="menu-item">
-        <a href="https://www.activeclubaustralia.org/" class="menu-link">RULES</a>
+        <a onclick="local()" href="#" class="menu-link">LOCAL</a>
       </li>
       <li class="menu-item">
-        <a href="https://www.activeclubaustralia.org/" class="menu-link">PROJECTS</a>
+        <a onclick="rules()" href="#" class="menu-link">RULES</a>
       </li>
       <li class="menu-item">
-        <a href="https://www.activeclubaustralia.org/" class="menu-link">FAQ</a>
+        <a onclick="projects()" href="#" class="menu-link">PROJECTS</a>
       </li>
       <li class="menu-item">
-        <a href="https://www.activeclubaustralia.org/" class="menu-link">CONTACT</a>
+        <a onclick="faq()" href="#" class="menu-link">FAQ</a>
+      </li>
+      <li class="menu-item">
+        <a onclick="contact()" href="#" class="menu-link">CONTACT</a>
       </li>
     </ul>
   </div>
 
-  <div id="about">
-    ...
-  </div>
+  <div id="background-white">
 
-  <div id="local">
-    ...
-  </div>
+    <div id="about">
+      <h1>About</h1>
+      <p>Inspired by the Active Clubs in Europe.</p>
+    </div>
 
-  <div id="rules">
-    ...
-  </div>
+    <div id="local">
+      <h1>Local</h1>
+    </div>
 
-  <div id="projects">
-    ...
-  </div>
+    <div id="rules">
+      <h1>Rules</h1>
+      <br>
+      <ol>
+        <li>
+          <p>You do not talk about Active Club.</p>
+        </li>
+        <li>
+          <p>You DO NOT talk about Active Club.</p>
+        </li>
+        <li>
+          <p>You must be >75% European ancestry.</p>
+          <p>Meaning only one grandparent can be of another ethnicity OR two grandparents with half non-european ethnicity each, etc.</p>
+        </li>
+        <li>
+          <p>You must be a man (intersex men are permitted).</p>
+          <p>Generally, you must have primarily a testosterone hormonal profile and be male in character (ie. male neurology).</p>
+        </li>
+                <li>
+          <p>No bullying, harassment or discrimination.</p>
+        </li>
+      </ol>
+    </div>
 
-  <div id="faq">
-    ...
-  </div>
+    <div id="projects">
+      <h1>Projects</h1>
+    </div>
 
-  <div id="contact">
-    ...
-  </div>
+    <div id="faq">
+      <h1>FAQ</h1>
+      <br>
+      <p><b>Q: </b>Are you white supremacists?</p>
+      <p><b>A: </b>No, we're just supremacists.</p>
+      <br>
+      <p><b>Q: </b>Do you hate Jews, Indians, non-whites, etc?</p>
+      <p><b>A: </b>No, we hate everyone equally.</p>
+      <br>
+      <p><b>Q: </b>Are you on drugs?</p>
+      <p><b>A: </b>I had a coffee this morning.</p>
+      <br>
+      <p><b>Q: </b>Are you gay, trans, queer, lgbt+, etc?</p>
+      <p><b>A: </b>No comment.</p>
+      <br>
+      <p><b>Q: </b>Are you racist?</p>
+      <p><b>A: </b>No, we just want to train and be around our own kind.</p>
+      <br>
+      <p><b>Q: </b>I'm *other ethnicity* and I feel left out / not included / excluded, what do I do?</p>
+      <p><b>A: </b>Make your own club.</p>
+      <br>
+    </div>
 
-  <div id="disclaimer">
-    ...
-  </div>
+    <div id="contact">
+      <h1>Contact</h1>
+    </div>
 
-  <div id="privacy">
-    ...
+    <div id="disclaimer">
+      <h1>Disclaimer</h1>
+    </div>
+
+    <div id="privacy">
+      <h1>Privacy Policy</h1>
+    </div>
+
   </div>
 
   <video autoplay muted loop id="background-video">
-    <source src="https://activeclubaustralia2026.wasmer.app/background.mp4" type="video/mp4">
+    <source src="background.mp4" type="video/mp4">
     Your browser does not support HTML5 video.
   </video>
 
-  <div class="footer">
-    <p id="footer-credit">&nbsp;<b>HX-01</b> by <a style="color: white;" target="_blank"
+  <div id="footer">
+    <p id="footer-credit">&nbsp;<b>HX-01</b> by <a class="footer-link" target="_blank"
         href="https://hexeosis.com/about/">hexeosis</a></p>
-    <p id="footer-links">&nbsp;<a style="color: white;" href="https://www.activeclubaustralia.org/">disclaimer</a> | <a style="color: white;"
-        href="https://www.activeclubaustralia.org/">privacy policy</a>&nbsp;</p>
+    <p id="footer-links">&nbsp;<a class="footer-link" onclick="disclaimer()" href="#">disclaimer</a> | <a
+        class="footer-link" onclick="privacy()" href="#">privacy policy</a>&nbsp;</p>
   </div>
 
   <script>
+
+    function home() {
+      document.getElementById("background-white").style.display = "none";
+      document.getElementById("footer").style.color = "#f1f1f1";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "#f1f1f1";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "#f1f1f1";
+      }
+    }
+
+    function about() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "block";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function local() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "block";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function rules() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "block";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function projects() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "block";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function faq() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "block";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function contact() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "block";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function disclaimer() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "block";
+      document.getElementById("privacy").style.display = "none";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
+
+    function privacy() {
+      document.getElementById("background-white").style.display = "block";
+
+      document.getElementById("about").style.display = "none";
+      document.getElementById("local").style.display = "none";
+      document.getElementById("rules").style.display = "none";
+      document.getElementById("projects").style.display = "none";
+      document.getElementById("faq").style.display = "none";
+      document.getElementById("contact").style.display = "none";
+      document.getElementById("disclaimer").style.display = "none";
+      document.getElementById("privacy").style.display = "block";
+
+      document.getElementById("footer").style.color = "black";
+
+      const collection1 = document.getElementsByClassName("menu-link");
+      for (let i = 0; i < collection1.length; i++) {
+        collection1[i].style.color = "black";
+      }
+
+      const collection2 = document.getElementsByClassName("footer-link");
+      for (let i = 0; i < collection2.length; i++) {
+        collection2[i].style.color = "black";
+      }
+    }
 
   </script>
 
